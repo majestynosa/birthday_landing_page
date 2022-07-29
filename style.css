@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(assests/fonts/AvenirLTStd-Black.otf) format('opentype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+}
+.hero__section {
+    background-image: url(assests/images/Group\ 8.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    /* width: 100%; */
+}
+.birthday__img {
+    padding-top: 2rem;
+    height: auto;
+    width: 100%;
+}
+.birthday__baloon {
+    position: relative;
+}
+.pink__baloon {
+    position: absolute;
+    top: -46rem;
+    left: 6rem;
+    width: 20%;
+}
+.wht__baloon {
+    position: absolute;
+    top: -34rem;
+    /* left: 95rem; */
+    right: -0.5rem;
+    width: 20%;
+    height: auto;
+}
+.pink__baloon, .wht__baloon {
+    animation-name: baloonAnimation;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1ms;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes baloonAnimation {
+    0% {
+        transform: translatey(100%);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+
+.heading__1, .heading__2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-shadow: 0.4rem 0.4rem 0rem #C2BCE9;
+}
+.heading__1 {
+    font-size: 12.8rem;
+    line-height: 13.5rem;
+    margin-top: -1rem;
+}
+.heading__2 {
+    font-size: 6.4rem;
+    line-height: 8.7rem;
+}
+.para {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: #D1D1D1;
+    margin-top: -6rem;
+}
+.birthday__text {
+    text-align: center;
+    position: relative;
+    top: -38rem;
+}
+.birthday__btn {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #88A9F0;
+    padding: 1.4em 1.8em;
+    position: relative;
+}
+.birthday__btn::before {
+    content: '';
+    border: 2px solid #88A9F0;
+    width: 22.8rem;
+    height: 7.8rem;
+    position: absolute;
+    top: 1rem;
+    left: -0.7rem;
+}
+.picture__section {
+    text-align: center;
+    margin-top: 8rem;
+}
+.picture__text {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 6.6rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.picture__img {
+    height: auto;
+}
+.prev__arrow{
+    position: absolute;
+    bottom: 20.5rem;
+    left: 15rem;
+    font-size: 8rem;
+    color: #88A9F0A6;
+}
+.play__circle {
+    position: absolute;
+    bottom: 35rem;
+    left: 60rem;
+}
+.next__arrow {
+    position: absolute;
+    bottom: 40.2rem;
+    left: 105rem;
+    font-size: 8rem;
+    color: #88A9F0A6;
+}
+.picture__btn {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #88A9F0;
+    padding: 1.4em 1.8em;
+    position: relative;
+    margin-top: 7rem;
+}
+.picture__btn::before {
+    content: '';
+    border: 2px solid #88A9F0;
+    width: 44.9rem;
+    height: 7.8rem;
+    position: absolute;
+    top: 1rem;
+    left: -0.7rem;
+}
+.article {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.3rem;
+    letter-spacing: 0.16em;
+    text-transform: capitalize;
+    color: #fff;
+    width: 80%;
+
+}
+.article__section {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* @media (max-width: 102.4rem) {
+    body, html {
+        font-size: calc(100vw/1024 * 10);
+    }
+} */
